@@ -5,113 +5,142 @@
     <meta charset="UTF-8">
     <title>Online Shop</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="queries.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="frontend-i-systems/fonts/fonts.css">
+    <link rel="stylesheet" href="frontend-i/fonts/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
 <body>
 <header>
-    <div class="status_panel">
-        <div class="row">
-            <img src="images/logo.png" alt="goodlokin logo">
-            <div class="shopping_info">
-                <input type="text" placeholder="Szukaj produktu...">
-                <div class="your_account">Twoje konto</div>
-                <div class="your_basket">269,00zł/prod.<span class="items_amount">(3)</span></div>
-                <button class="shiny" type="button">do kasy</button>
-            </div>
-        </div>
-        <div class="row slogan_row">
-            <p class="slogan"><span>that's what we call fashion</span></p>
+    <div class="row">
+        <img src="images/logo.png" alt="goodlokin logo">
+        <div class="shopping_info">
+            <input type="text" placeholder="Szukaj produktu...">
+            <div class="your_account">Twoje konto</div>
+            <div class="your_basket" id="cart">00,00zł/prod.</span><span class="items_amount" id="quantity">(0)</span></div>
+            <button class="shiny" type="button">do kasy</button>
         </div>
     </div>
+    <div class="row slogan_row">
+        <p class="slogan"><span>that's what we call fashion</span></p>
+    </div>
+    </div>
     <div class="row">
-    <nav>
-        <ul>
-            <li>Odzież<span class="fa fa-caret-down"></span> </li>
-            <li>Akcesoria<span class="fa fa-caret-down"></span></li>
-            <li>Trendy<span class="fa fa-caret-down"></span></li>
-            <li>Marki<span class="fa fa-caret-down"></span></li>
-            <li>Nowości<span class="fa fa-caret-down"></span></li>
-            <li>Promocje<span class="fa fa-caret-down"></span></li>
-        </ul>
+        <nav>
+            <ul>
+                <li>Odzież<span class="fa fa-caret-down"></span></li>
+                <li>Akcesoria<span class="fa fa-caret-down"></span></li>
+                <li>Trendy<span class="fa fa-caret-down"></span></li>
+                <li>Marki<span class="fa fa-caret-down"></span></li>
+                <li>Nowości<span class="fa fa-caret-down"></span></li>
+                <li>Promocje<span class="fa fa-caret-down"></span></li>
+            </ul>
 
-    </nav>
+        </nav>
     </div>
 </header>
 <section class="welcome">
-<div class="row">
-    <div class="newcommer">
-    <h1>nowa kolekcja<br> jesień 2015</h1>
-    <p>Niebanalna, pikowana kurtka wiosenna! Kurta bardzo dobrze skrojona. Zapinana na napy.<br>Wykonana z świetnej jakości materiału. Kurtka jest pikowana.</p>
-<button type="button">Dowiedz się więcej</button>
+    <div class="row">
+        <div class="newcommer">
+            <h1>nowa kolekcja<br> jesień 2015</h1>
+            <p>Niebanalna, pikowana kurtka wiosenna! Kurta bardzo dobrze skrojona. Zapinana na napy.<br>Wykonana z
+                świetnej jakości materiału. Kurtka jest pikowana.</p>
+            <button type="button">Dowiedz się więcej</button>
 
+        </div>
+        <div class="picture">
+            <img src="images/lady.png">
+            <img src="images/woman.jpg">
+        </div>
     </div>
-</div>
 </section>
 <section class="clothes">
     <div class="row">
-<p class="current_info">ostatnio oglądane</p>
+        <p class="current_info">ostatnio oglądane</p>
         <ul>
 
-        <li><img src="images/item1.png"> </li>
-        <li><img src="images/item2.png"></li>
-        <li><img src="images/item3.png"></li>
-        <li><img src="images/item4.png"></li>
-        <li><img src="images/item1.png"></li>
-        <li><img src="images/item2.png"></li>
-        <li><img src="images/item3.png"></li>
-        <li><img src="images/item4.png"></li>
-        <li><img src="images/item1.png"></li>
-        <li><img src="images/item2.png"></li>
+            <li><img src="images/item1.png"></li>
+            <li><img src="images/item2.png"></li>
+            <li><img src="images/item3.png"></li>
+            <li><img src="images/item4.png"></li>
+            <li><img src="images/item1.png"></li>
+            <li><img src="images/item2.png"></li>
+            <li><img src="images/item3.png"></li>
+            <li><img src="images/item4.png"></li>
+            <li><img src="images/item1.png"></li>
+            <li><img src="images/item2.png"></li>
         </ul>
     </div>
     <hr>
 </section>
 <section class="items_for_sale">
-<div class="row">
-    <ul class="options_list">
-        <li>polecane<span class="fa fa-caret-down"></span></li>
-        <li>nowości<span class="fa fa-caret-down"></span></li>
-        <li>promocje<span class="fa fa-caret-down"></span></li>
-    </ul>
-</div>
-<div class="row">
-    <figure>
-    <img src="images/item1.png" alt="Jacket nr 1" >
-        <figcaption><span class="price">159,90 zł</span><br>Parka zimowa K&L bordowa <br>(KM1519) </figcaption>
-</figure>
-    <figure>
-        <img src="images/item2.png" alt="Jacket nr 1" >
-        <figcaption><span class="price">159,90 zł</span><br>Parka zimowa K&L bordowa <br>(KM1519) </figcaption>
-    </figure>
-    <figure>
-        <img src="images/item3.png" alt="Jacket nr 1" >
-        <figcaption><span class="price">159,90 zł</span><br>Parka zimowa K&L bordowa <br>(KM1519) </figcaption>
-    </figure>
-    <figure>
-        <img src="images/item1.png" alt="Jacket nr 1" >
-        <figcaption><span class="price">159,90 zł</span><br>Parka zimowa K&L bordowa <br>(KM1519) </figcaption>
-    </figure>
-</div>
     <div class="row">
+        <ul class="options_list">
+            <li>polecane<span class="fa fa-caret-down"></span></li>
+            <li>nowości<span class="fa fa-caret-down"></span></li>
+            <li>promocje<span class="fa fa-caret-down"></span></li>
+        </ul>
+    </div>
+    <div class="row">
+
+
         <figure>
-            <img src="images/item1.png" alt="Jacket nr 1" >
-            <figcaption><span class="price">159,90 zł</span><br>Parka zimowa K&L bordowa <br>(KM1519) </figcaption>
+            <img src="images/item1.png" id="myImg" alt="Jacket nr 1" class="img_for_modal">
+            <figcaption><span class="price">159,90</span><span>zł</span> <i class="fa fa-shopping-basket"
+                                                                            onclick="addToCart(this)"></i><br>Parka
+                zimowa K&L bordowa <br>(KM1519)
+            </figcaption>
         </figure>
         <figure>
-            <img src="images/item2.png" alt="Jacket nr 1" >
-            <figcaption><span class="price">159,90 zł</span><br>Parka zimowa K&L bordowa <br>(KM1519) </figcaption>
+            <img src="images/item2.png" alt="Jacket nr 1" class="img_for_modal">
+            <figcaption><span class="price">119,00</span><span>zł</span><i class="fa fa-shopping-basket"
+                                                                           onclick="addToCart(this)"></i><br>Parka
+                zimowa K&L wojskowa <br>(KM1519)
+            </figcaption>
         </figure>
         <figure>
-            <img src="images/item3.png" alt="Jacket nr 1" >
-            <figcaption><span class="price">159,90 zł</span><br>Parka zimowa K&L bordowa <br>(KM1519) </figcaption>
+            <img src="images/item3.png" alt="Jacket nr 2"  class="img_for_modal">
+            <figcaption><span class="price">79,90</span><span>zł</span><i class="fa fa-shopping-basket"
+                                                                          onclick="addToCart(this)"></i><br>Parka zimowa
+                K&L beżowa <br>(KM1519)
+            </figcaption>
         </figure>
         <figure>
-            <img src="images/item1.png" alt="Jacket nr 1" >
-            <figcaption><span class="price">159,90 zł</span><br>Parka zimowa K&L bordowa <br>(KM1519) </figcaption>
+            <img src="images/item1.png" alt="Jacket nr 3" class="img_for_modal">
+            <figcaption><span class="price">99,90</span><span>zł</span><i class="fa fa-shopping-basket"
+                                                                          onclick="addToCart(this)"></i><br>Parka zimowa
+                K&L bordowa <br>(KM1519)
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/item1.png" alt="Jacket nr 4" class="img_for_modal">
+            <figcaption><span class="price">30,00</span><span>zł</span><i class="fa fa-shopping-basket"
+                                                                          onclick="addToCart(this)"></i><br><p>Parka zimowa
+                K&L wojskowa <br>(KM1519)</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/item2.png" alt="Jacket nr 5" class="img_for_modal">
+            <figcaption><span class="price">109,90</span><span>zł</span><i class="fa fa-shopping-basket"
+                                                                           onclick="addToCart(this)"></i><br>Parka
+                zimowa K&L beżowa <br>(KM1519)
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/item3.png" alt="Jacket nr 6" class="img_for_modal" >
+            <figcaption><span class="price">40,90</span><span>zł</span><i class="fa fa-shopping-basket"
+                                                                          onclick="addToCart(this)"></i><br>Parka zimowa
+                K&L bordowa <br>(KM1519)
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/item1.png" alt="Jacket nr 7" class="img_for_modal">
+            <figcaption><span class="price">60,00</span><span>zł</span><i class="fa fa-shopping-basket"
+                                                                          onclick="addToCart(this)"></i><br>Parka zimowa
+                K&L wojskowa <br>(KM1519)
+            </figcaption>
         </figure>
     </div>
     <div class="row button_row">
@@ -120,43 +149,49 @@
 </section>
 <footer>
     <div class="col_1">
-      <div class="title">Informacje</div>
+        <div class="title">Informacje</div>
         <ul>
-            <li>Status zamówienia</li>
-            <li>Zwroty,wymiana,reklamacje</li>
-            <li>Regulamin sklepu</li>
-            <li>Formy płatności</li>
-            <li>Koszty dostawy</li>
-            <li>O firmie</li>
-            <li>Program lojalnościowy</li>
-            <li>Kontakt</li>
-            <li>Polityka cookies sklepu</li>
+            <li><a href="#">Status zamówienia</a></li>
+            <li><a href="#">Zwroty,wymiana,reklamacje</a></li>
+            <li><a href="#">Regulamin sklepu</a></li>
+            <li><a href="#">Formy płatności</a></li>
+            <li><a href="#">Koszty dostawy</a></li>
+            <li><a href="#">O firmie</a></li>
+            <li><a href="#">Program lojalnościowy</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Polityka cookies sklepu</a></li>
         </ul>
     </div>
     <div class="col_2">
         <div class="title">Płatności i dostawa</div>
         <div class="details">
-        Akceptowalne formy płatnosci to karta płatnicza, przelew online,
-        przelew tradycyjny, płatność przy odbiorze.<br><br>
-        Metody dostawy:<br>
-        Przesyłka kurierska lub odbiór osobisty w sklepie.<br><br>
-        Koszt dostawy<br>
-        wpłata na konto: 9,90zł<br>
-        opłata zapobraniem: 14,90zł<br>
-        przy zamówieniu powyżej 200zł wysyłka gratis!<br>
-        Powyższe ceny dotyczą wysyłki na terenie Polski.<br>
-            <em class="cautious">30 dni na odstąpienie od umowy!</em>
+            Akceptowalne formy płatnosci to karta płatnicza, przelew online,
+            przelew tradycyjny, płatność przy odbiorze.<br><br>
+            Metody dostawy:<br>
+            Przesyłka kurierska lub odbiór osobisty w sklepie.<br><br>
+            Koszt dostawy<br>
+            wpłata na konto: 9,90zł<br>
+            opłata zapobraniem: 14,90zł<br>
+            przy zamówieniu powyżej 200zł wysyłka gratis!<br>
+            Powyższe ceny dotyczą wysyłki na terenie Polski.<br>
+            <div class="cautious"><em>30 dni na odstąpienie od umowy!</em></div>
         </div>
     </div>
     <div class="col_3">
         <div class="title">Newsletter</div>
-       <input type="email" placeholder="Wpisz swój adres e-mail">
+        <input type="email" placeholder="Wpisz swój adres e-mail">
         <button class="shiny" type="button">zapisz się</button>
         <div class="title">Kontakt</div>
         <div class="tel">517 557 517</div>
-        <div class="mail">sklep@goodlookin.pl</div>
+        <div class="mail"><b>sklep@goodlookin.pl</b></div>
     </div>
 </footer>
+<div id="itemModal" class="modal">
+    <i class="fa fa-times" id="cross" aria-hidden="true" ></i>
+    <img class="modal_content" id="selectedImage">
+    <div id="caption"></div>
+</div>
+<script src="jquery.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

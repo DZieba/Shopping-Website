@@ -8,6 +8,10 @@
     padding:0;
     box-sizing: border-box;
 }
+a{
+    color: inherit;
+    text-decoration: none;
+}
 
 html,
 body{
@@ -15,7 +19,10 @@ body{
     color: #000;
   font-family: 'Lato';
     font-size: 14px;
+
 }
+
+/*      CLEARFIX class wasn't needed after all, all items alignment was done by the help of FLEXBOX
 .clearfix:after {
     content: '.';
     clear: both;
@@ -46,13 +53,19 @@ button{
     padding:7px 25px;
     background-color: #fff;
     height:32px;
+    outline: none;
 }
+button:hover{
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.58);
+}
+/* ----------------------------------------------- */
+/* HEADER SECTION */
+/* ----------------------------------------------- */
 
 .shopping_info{
     display: flex;
     align-items: center;
 }
-
 
 .fa-search{
     position: absolute;
@@ -63,23 +76,20 @@ input{
     margin-right:20px;
     border-radius:20px;
     outline:none;
-
-
 }
+
 .shopping_info>input:before{
     content: "\f002";
     font-family: FontAwesome;
     display: inline-block;
-
 }
-
-
 
 .your_account,
 .your_basket{
     font-weight:400;
     margin-right:20px;
 }
+
 .your_account:before,
 .your_basket:before{
     content:"\f007";
@@ -101,26 +111,33 @@ input{
     padding: 20px 0 0 30px;
 }
 .slogan{
-
     width:100%;
     border-top: 1px solid rgb(168, 168, 168) ;
     line-height:0.01em;
     color: rgb(168, 168, 168)
 }
+
 p span{
     font-family: 'lovelo';
     font-size:11px;
     background:#fff;
     padding:0 10px;
 }
-
+/* ----------------------------------------------- */
+/* NAVIGATION */
+/* ----------------------------------------------- */
 
 nav>ul>li {
     display: inline-block;
     font-family: 'lovelo';
     font-size:13px;
     margin-left:30px;
+    cursor: pointer;
 }
+nav>ul>li:hover{
+    color: #a8a8a8;
+}
+
 nav>ul>li:first-child{
     margin-left:0;
 }
@@ -128,13 +145,15 @@ nav>ul>li>span{
     margin-left:10px;
 }
 
-/*----------SECTION---------------------*/
+/* ----------------------------------------------- */
+/* WELCOME SECTION */
+/* ----------------------------------------------- */
 .welcome{
     margin-top:30px;
 
-    background-image: url("images/Shape 5.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0)), url("images/Shape 5.png");
     background-position: 50% 0%;
-    height:549px;
+    height:544px;
 
 }
 .newcommer>h1{
@@ -147,11 +166,16 @@ nav>ul>li>span{
 .newcommer>button{
     margin-top:30px;
 }
-.current_info{
-    font-family:'lovelo';
-    flex:1;
-    align-self:center;
+.picture{
+    margin-top:-30px;
 }
+.picture>img:nth-of-type(2){
+    display: none;
+}
+/* ----------------------------------------------- */
+/* CLOTHES SECTION */
+/* ----------------------------------------------- */
+
 .clothes>.row{
     padding:0;
 }
@@ -159,10 +183,9 @@ nav>ul>li>span{
     display: flex;
     justify-content:space-between;
     flex-grow: 2;
-
 }
-.clothes>.row>ul>li{
 
+.clothes>.row>ul>li{
     border-right:1px solid rgb(168, 168, 168);
 }
 
@@ -170,17 +193,36 @@ nav>ul>li>span{
 margin:15px 8px;
     width:45px;
     height:60px;
-
 }
+
+.current_info{
+    font-family:'lovelo';
+    flex:1;
+    align-self:center;
+    margin-right:15px;
+}
+
+/* ----------------------------------------------- */
+/* ITEMS-FOR-SALE SECTION */
+/* ----------------------------------------------- */
+
+
 .items_for_sale>.row:first-child{
     justify-content:center
 }
+
 .items_for_sale>.row:first-child:before{
     content: '';
     width:1140px;
     position: absolute;
     height:20px;
     border-bottom:1px solid #a0a1a3;
+}
+
+.items_for_sale>.row:nth-of-type(2){
+    flex-wrap:wrap;
+    justify-content:space-between;
+
 }
 .options_list{
     display: flex;
@@ -203,7 +245,6 @@ margin:15px 8px;
     color: #000;
 }
 
-
 figure{
     padding: 30px;
 
@@ -211,9 +252,9 @@ figure{
 figure>img{
     width: 221px;
     height: 332px;
-
     padding:0 20px 15px 20px;
     border-bottom:1px solid rgba(160, 161, 163, 0.45);
+    cursor: pointer;
 }
 figcaption{
     color: #a0a1a3;
@@ -222,55 +263,149 @@ figcaption>span{
     font-family:'lovelo';
     font-size:16px;
     color: #000;
+    margin-right: 10px;
+}
+figcaption i{
+     color: #000;
+
+     cursor: pointer;
+ }
+figcaption i:active{
+    font-size:18px;
+    color:#a8a8a8;
 }
 .button_row{
     justify-content:center;
     margin-bottom: 60px;
 }
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
 footer{
     display:flex;
-    width:1140px;
+    max-width:1140px;
     margin: 0 auto;
     padding:30px 20px;
-    border:1px solid  #a0a1a3
+    border:2px solid  rgba(160, 161, 163, 0.18);
 }
 .col_1{
     flex:1;
+}
+.col_1,
+.col_2{
+    margin-right:15px;
 }
 .col_2,
 .col_3{
     flex:2;
 }
-
-
+.col_1 li{
+    margin:0 10px 17px 0;
+}
 
 .title{
     font-family:'lovelo';
     font-size:14px;
     margin-bottom:20px;
+}
 
+.title:nth-child(4){
+    margin-top:30px;
 }
-.title:last-child{
-    margin-top:20px;
-}
+
 footer>ul{
     font-size:13px;
     font-weight:400;
-
 }
 
 .details{
     font-size: 13px;
     color:#a8a8a8;
     font-weight:400;
+
 }
 
 .cautious{
+    margin-top:10px;
     color: rgb(255, 102, 0);
 }
+
 .col_3>input{
     padding-right:40px;
+    margin-bottom:30px;
 }
+
+.tel{
+    font-size:30px;
+    font-weight:700;
+    color:#a8a8a8;
+    margin-bottom:15px;
+}
+
+.modal {
+    display:none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal>i{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    color: #f1f1f1;
+    font-size: 40px;
+    cursor:pointer;
+}
+
+.modal_content {
+    margin: 0 auto;
+    display: block;
+    width:300px;
+}
+
+#caption{
+    position:absolute;
+    top:30px;
+    left:50%;
+    transform:translateX(-50%);
+    color:#fff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
