@@ -71,13 +71,20 @@ button:hover{
     position: absolute;
 }
 input{
+
     line-height: 2em;
     padding-left: 10px;
     margin-right:20px;
     border-radius:20px;
     outline:none;
 }
-
+.shopping_info>input{
+    background: url("images/magni.svg");
+    background-position:right;
+    background-size:20px;
+    background-position:right;
+    background-repeat:no-repeat;
+}
 .shopping_info>input:before{
     content: "\f002";
     font-family: FontAwesome;
@@ -102,9 +109,9 @@ input{
     content:"\f07a";
 }
 
- .shiny{
-    background-color:rgb(255, 102, 0) ;
-
+.shiny{
+    background-color:rgba(255, 102, 0, 0.79) ;
+    border:none;
     color: #fff;
 }
 .slogan_row{
@@ -190,9 +197,11 @@ nav>ul>li>span{
 }
 
 .clothes>.row>ul>li>img{
-margin:15px 8px;
-    width:45px;
+    margin:15px 8px;
+    width:65px;
     height:60px;
+    text-align:center;
+    padding-right:20px;
 }
 
 .current_info{

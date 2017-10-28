@@ -1,7 +1,8 @@
 @media screen and (max-width: 1320px) {
-body{
-    overflow-x: hidden;
-}
+    body {
+        overflow-x: hidden;
+    }
+
     .items_for_sale > .row:nth-child(2) {
         flex-wrap: wrap;
         justify-content: space-around;
@@ -92,8 +93,12 @@ body{
     .items_for_sale > .row:nth-child(2) {
         justify-content: center;
     }
-}
 
+    .clothes > .row {
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+}
 
 @media screen and (max-width: 800px) {
     .current_info {
@@ -102,7 +107,7 @@ body{
     }
 
     .clothes > .row > ul {
-        flex-wrap: wrap;
+
     }
 
     .clothes > .row > ul > li {
@@ -118,7 +123,8 @@ body{
     }
 
     nav {
-        text-align: center;}
+        text-align: center;
+    }
 
     nav > ul > li {
         width: 25%;
@@ -128,8 +134,9 @@ body{
     nav > ul > li:first-child {
         margin-left: 10px;
     }
-    .picture>img{
-        width:400px
+
+    .picture > img {
+        width: 400px
     }
 
     footer {
@@ -151,7 +158,8 @@ body{
 @media screen and (max-width: 420px) {
 
     .row {
-        flex-direction: column;}
+        flex-direction: column;
+    }
 
     .shopping_info input,
     .shopping_info button {
@@ -160,15 +168,21 @@ body{
     }
 
     nav > ul > li {
-        width: 100%;}
+        width: 100%;
+    }
+
+    .current_info {
+        margin: 20px 0;
+    }
 
     .options_list {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .button_row{
-        width:60%;
+
+    .button_row {
+        width: 70%;
     }
 
 }
